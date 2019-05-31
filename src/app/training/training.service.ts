@@ -1,5 +1,5 @@
 import { Exercise } from "./exercise.model";
-import { Subject, Subscription, throwError } from "rxjs";
+import { Subject, Subscription } from "rxjs";
 import { Injectable } from "@angular/core";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { map } from "rxjs/operators";

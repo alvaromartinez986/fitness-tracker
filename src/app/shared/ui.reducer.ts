@@ -17,7 +17,7 @@ export function uiReducer(state = initialState, action: Action) {
       };
     case STOP_LOADING:
       return {
-        isLoading: true
+        isLoading: false
       };
     default: {
       return state;

@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.isLoading$ = this.store.select(fromRoot.getIsloading);
+    this.isLoading$ = this.store.select(fromRoot.getIsLoading);
 
     this.loginForm = new FormGroup({
       email: new FormControl("", {
