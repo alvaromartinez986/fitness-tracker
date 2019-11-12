@@ -8,7 +8,7 @@ import { TrainingService } from "../training/training.service";
 import { UIService } from "../shared/ui.service";
 import { Store } from "@ngrx/store";
 import * as fromRoot from "../app.reducer";
-import * as UI from "../shared/ui.action";
+import * as UI from "../shared/ui.actions";
 import * as Auth from "./auth.actions";
 
 @Injectable()
