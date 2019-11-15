@@ -14,8 +14,8 @@ export class PastTrainingComponent implements OnInit, AfterViewInit {
   displayedColumns = ["date", "name", "duration", "calories", "state"];
   dataSource = new MatTableDataSource<Exercise>();
 
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
   constructor(
     private trainningService: TrainingService,
